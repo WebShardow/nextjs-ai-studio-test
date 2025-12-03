@@ -1,26 +1,24 @@
+/* globals.css */
+
 @import "tailwindcss";
 
+/* 💡 การแก้ไข: ทำให้การกำหนดสีพื้นฐานชัดเจนขึ้น */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: #ffffff;
+  --color-foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-background: #0a0a0a;
+    --color-foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
+  /* ลบบรรทัด 'background: var(--background);' เพื่อให้ Tailwind Gradient ใน layout.tsx ทำงานได้ */
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ลบ @theme inline ออก */
