@@ -25,7 +25,7 @@ async function fetchContentData(): Promise<ContentItem[]> {
         baseUrl = process.env.SERVER_URL; 
     }
 
-    // 💡 FIX: ใช้ Path ที่ถูกต้องสำหรับ API Content คือ /api/chat (ตามที่คุณแจ้ง)
+    // 💡 ยืนยัน FIX: Path ถูกต้องสำหรับ app/api/chat/route.ts
     const apiPath = '/api/chat'; 
     const apiUrl = baseUrl ? `${baseUrl}${apiPath}` : apiPath; 
 

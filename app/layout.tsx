@@ -29,13 +29,21 @@ export default function RootLayout({
         <html lang="en">
             <body
                 className={`
-          ${geistSans.variable} ${geistMono.variable} antialiased
-          min-h-screen
-          // **** Glassmorphism Background ****
-          bg-gray-100 dark:bg-gray-900 
-          bg-linear-to-br from-indigo-100/70 via-white/70 to-pink-100/70 
-          dark:from-gray-800 dark:via-gray-900 dark:to-gray-800
-        `}
+                    ${geistSans.variable} ${geistMono.variable} 
+                    antialiased min-h-screen
+                    
+                    // **** Glassmorphism Background (Corrected) ****
+                    bg-gray-100 dark:bg-gray-900 
+                    
+                    // 💡 FIX: ต้องใช้ 'bg-gradient-to-br' เท่านั้น
+                    bg-gradient-to-br 
+                    
+                    // Light Mode Gradient: โปร่งแสง (Glass)
+                    from-indigo-100/70 via-white/70 to-pink-100/70 
+                    
+                    // 💡 NEW Dark Mode: ชมพู-ม่วง เข้มขึ้น (Dark Fuchsia/Purple)
+                    dark:from-indigo-600/80 dark:via-fuchsia-600/70 dark:to-pink-700
+                `}
             >
                 {children}
             </body>

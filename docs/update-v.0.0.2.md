@@ -445,3 +445,14 @@ export function ChatBot() {
     );
 }
 ```
+
+### 4. แก้ไข `.env.local` (ตั้งค่า SERVER_URL)
+
+เพิ่มตัวแปร `SERVER_URL` ในไฟล์ `.env.local` เพื่อระบุ URL ของเซิร์ฟเวอร์ในระหว่างการพัฒนา
+
+```env
+GOOGLE_GENERATIVE_AI_API_KEY="API_KEY_HERE"
+SERVER_URL=http://localhost:3002
+```
+
+-----
