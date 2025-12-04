@@ -42,7 +42,7 @@ export default function RootLayout({
                     from-indigo-100/70 via-white/70 to-pink-100/70 
                     
                     // 💡 NEW Dark Mode: ชมพู-ม่วง เข้มขึ้น (Dark Fuchsia/Purple)
-                    dark:from-indigo-600/80 dark:via-fuchsia-600/70 dark:to-pink-700
+                    dark:from-blue-600/80 dark:via-teal-600/70 dark:to-green-700
                 `}
             >
                 {children}
